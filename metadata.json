@@ -1,0 +1,6 @@
+{
+  "name": "Evolution Gym Kathmandu",
+  "description": "Premium bodybuilding and strength training gym in Kathmandu, Nepal. Rated 4.7 stars with 346+ Google reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

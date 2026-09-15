@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Gallery - Evolution Gym Kathmandu</title>
+  <meta name="description" content="Explore photos of Evolution Gym in Kathmandu. Heavy bodybuilding gear, workout floors, friendly community, and athletic gym atmosphere.">
+  <meta property="og:title" content="Gym Gallery - Evolution Gym Kathmandu">
+  <meta property="og:description" content="Explore photos of Evolution Gym in Kathmandu. Heavy bodybuilding gear, workout floors, friendly community, and athletic gym atmosphere.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- SKIP TO MAIN CONTENT LINK FOR KEYBOARD ACCESSIBILITY -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- NAVBAR HEADER -->
+  <header class="header" id="mainHeader">
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="brandLogo" aria-label="Evolution Gym Kathmandu Home">
+        <div class="logo-badge">EVO</div>
+        <span>EVOLUTION<span class="text-red">GYM</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="trainers.html" class="nav-link">Trainers</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="gallery.html" class="nav-link active">Gallery</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="btn btn-primary btn-sm open-pass-modal" id="navPassBtn">Join Now</button>
+      </div>
+
+      <div class="hamburger" id="hamburgerToggle" aria-label="Toggle navigation" role="button" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="mainContent">
+
+  <!-- PAGE HERO HEADER -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem); padding-bottom: 3rem; background: var(--bg-surface);">
+    <div class="container text-center">
+      <div class="badge"><span class="badge-dot"></span> INSIDE EVOLUTION GYM</div>
+      <h1 class="section-title" style="font-size: 3.5rem;">OUR GYM GALLERY</h1>
+      <p class="section-subtitle">Click on any photograph to view high-resolution facility details, equipment racks, and training vibe.</p>
+    </div>
+  </section>
+
+  <!-- GALLERY SECTION -->
+  <section class="section" id="gallerySection">
+    <div class="container">
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-bar" style="margin-bottom: 2.5rem;">
+        <button class="filter-btn gallery-filter-btn active" data-filter="all">All Photos (12)</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="interior">Gym Interior</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="equipment">Equipment</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="training">Training</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="atmosphere">Atmosphere</button>
+        <button class="filter-btn gallery-filter-btn" data-filter="community">Community</button>
+      </div>
+
+      <!-- Masonry Image Grid -->
+      <div class="gallery-masonry" id="galleryMasonryGrid">
+
+        <!-- Item 1: Gym Interior (Medium Height) -->
+        <div class="gallery-item height-md" data-category="interior" data-tag="Gym Interior" data-title="Bodybuilding Iron Workout Floor">
+          <span class="gallery-tag-badge">Interior</span>
+          <img src="assets/images/about_gym.jpg" alt="Bodybuilding Iron Workout Floor" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Iron Workout Floor</span>
+          </div>
+        </div>
+
+        <!-- Item 2: Equipment (Large Height) -->
+        <div class="gallery-item height-lg" data-category="equipment" data-tag="Equipment" data-title="Heavy Dumbbell & Olympic Barbell Racks">
+          <span class="gallery-tag-badge">Equipment</span>
+          <img src="assets/images/equipment.jpg" alt="Heavy Weight Dumbbells Rack" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Heavy Dumbbell Racks</span>
+          </div>
+        </div>
+
+        <!-- Item 3: Community (Small Height) -->
+        <div class="gallery-item height-sm" data-category="community" data-tag="Community" data-title="Friendly Coaching & Member Community">
+          <span class="gallery-tag-badge">Community</span>
+          <img src="assets/images/community.jpg" alt="Training Community Vibe" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Training Community</span>
+          </div>
+        </div>
+
+        <!-- Item 4: Training & Equipment (Medium Height) -->
+        <div class="gallery-item height-md" data-category="equipment training" data-tag="Equipment & Training" data-title="Cable Machine & Hypertrophy Station">
+          <span class="gallery-tag-badge">Equipment</span>
+          <img src="assets/images/bodybuilding.jpg" alt="Cable Hypertrophy Station" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Hypertrophy Cable Stack</span>
+          </div>
+        </div>
+
+        <!-- Item 5: Atmosphere & Interior (Large Height) -->
+        <div class="gallery-item height-lg" data-category="interior atmosphere" data-tag="Atmosphere" data-title="Barbell Power Rack & Bench Area">
+          <span class="gallery-tag-badge">Atmosphere</span>
+          <img src="assets/images/hero_bg.jpg" alt="Squat & Bench Setup" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Heavy Power Rack Zone</span>
+          </div>
+        </div>
+
+        <!-- Item 6: Training (Small Height) -->
+        <div class="gallery-item height-sm" data-category="training" data-tag="Training" data-title="Coach Form Guidance & Spotting Support">
+          <span class="gallery-tag-badge">Training</span>
+          <img src="assets/images/trainer_bikash.jpg" alt="Coach Guidance and Form Correction" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Form Guidance & Spotting</span>
+          </div>
+        </div>
+
+        <!-- Item 7: Training (Medium Height) -->
+        <div class="gallery-item height-md" data-category="training equipment" data-tag="Training" data-title="Compound Barbell Squat & Deadlift Platform">
+          <span class="gallery-tag-badge">Training</span>
+          <img src="assets/images/program_strength.jpg" alt="Barbell Squat and Deadlift Setup" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Barbell Power Platform</span>
+          </div>
+        </div>
+
+        <!-- Item 8: Atmosphere (Small Height) -->
+        <div class="gallery-item height-sm" data-category="atmosphere" data-tag="Atmosphere" data-title="Joint Mobility & Dynamic Warmup Floor">
+          <span class="gallery-tag-badge">Atmosphere</span>
+          <img src="assets/images/program_yoga.jpg" alt="Mobility and Dynamic Stretching Zone" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Mobility & Warmup Area</span>
+          </div>
+        </div>
+
+        <!-- Item 9: Community & Training (Large Height) -->
+        <div class="gallery-item height-lg" data-category="community training" data-tag="Community" data-title="Zero-Intimidation Floor Onboarding & Support">
+          <span class="gallery-tag-badge">Community</span>
+          <img src="assets/images/trainer_sunita.jpg" alt="Floor Coach Onboarding Support" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Floor Coach Onboarding</span>
+          </div>
+        </div>
+
+        <!-- Item 10: Training (Medium Height) -->
+        <div class="gallery-item height-md" data-category="training" data-tag="Training" data-title="Metabolic Fat Loss & Cardio Conditioning">
+          <span class="gallery-tag-badge">Training</span>
+          <img src="assets/images/program_hiit.jpg" alt="Metabolic HIIT Shred Training" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Metabolic Cardio Shred</span>
+          </div>
+        </div>
+
+        <!-- Item 11: Gym Interior (Small Height) -->
+        <div class="gallery-item height-sm" data-category="interior" data-tag="Gym Interior" data-title="Main Gym Entrance & Changing Facilities">
+          <span class="gallery-tag-badge">Interior</span>
+          <img src="assets/images/about_gym.jpg" alt="Gym Interior Facilities" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Clean Changing & Amenities</span>
+          </div>
+        </div>
+
+        <!-- Item 12: Equipment (Medium Height) -->
+        <div class="gallery-item height-md" data-category="equipment" data-tag="Equipment" data-title="Plate-Loaded Machine & Incline Dumbbell Bench">
+          <span class="gallery-tag-badge">Equipment</span>
+          <img src="assets/images/equipment.jpg" alt="Plate Loaded Machines" loading="lazy">
+          <div class="gallery-overlay">
+            <div class="gallery-zoom-icon">🔍</div>
+            <span class="gallery-caption">Plate-Loaded Chest & Row Stack</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA SECTION -->
+  <section class="section section-darker text-center" id="galleryCTA">
+    <div class="container">
+      <div class="badge"><span class="badge-dot"></span> EXPERIENCE IT IN PERSON</div>
+      <h2 class="section-title" style="font-size: 3rem;">VISIT EVOLUTION GYM KATHMANDU</h2>
+      <p class="section-subtitle" style="margin-bottom: 2rem;">Claim a complimentary 1-day pass to test our heavy iron floor, cable stacks, and friendly atmosphere.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="membership.html" class="btn btn-primary btn-lg">Join Now</a>
+        <button class="btn btn-whatsapp btn-lg wa-hero-btn">💬 Enquire on WhatsApp</button>
+        <button class="btn btn-whatsapp btn-lg wa-trial-btn">💬 Book a Trial Session</button>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="mainFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1.25rem;">
+            <div class="logo-badge">EVO</div>
+            <span>EVOLUTION<span class="text-red">GYM</span></span>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.925rem; margin-bottom: 1.5rem;">
+            Evolution Gym is Kathmandu's premier bodybuilding and strength training center, offering top equipment, friendly trainers, and affordable memberships.
+          </p>
+          <div style="font-size: 0.9rem; color: var(--accent-gold); font-weight: 700;">
+            4.7 ★ Rated (346+ Google Reviews)
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Training Programs</a>
+            <a href="trainers.html">Our Trainers</a>
+            <a href="membership.html">Membership Plans</a>
+            <a href="gallery.html">Gym Gallery</a>
+            <a href="reviews.html">Google Reviews</a>
+            <a href="contact.html">Contact / Visit</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Operating Hours</h4>
+          <div style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8;">
+            <p><strong>Monday - Saturday:</strong> 5:30 AM - 10:00 PM</p>
+            <p><strong>Sunday:</strong> 6:00 AM - 9:00 PM</p>
+            <p style="color: var(--accent-red); font-weight: 700; margin-top: 0.5rem;">● Open until 10 PM daily</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <div style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8;">
+            <p>📍 Kathmandu, Bagmati Province 44600, Nepal</p>
+            <p>📞 Phone: <strong>981-5813774</strong></p>
+            <p>💬 WhatsApp: <a href="https://wa.me/9779815813774" target="_blank" rel="noopener noreferrer" style="color: #25d366; font-weight: 700;">+977 9815813774</a></p>
+            <p>✉️ info@evolutiongymnepal.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Evolution Gym Kathmandu. All rights reserved.</p>
+        <p>Premium Athletic Experience in Nepal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TRIAL PASS MODAL -->
+  <div class="modal-overlay" id="passModal">
+    <div class="modal-content">
+      <span class="modal-close" id="closePassModalBtn">&times;</span>
+      <div class="badge"><span class="badge-dot"></span> NO OBLIGATION</div>
+      <h3 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 900; margin-bottom: 0.5rem; text-transform: uppercase;">CLAIM YOUR FREE GYM PASS</h3>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">Experience Evolution Gym's equipment and friendly guidance free for 1 day.</p>
+      
+      <form id="modalPassForm">
+        <div class="form-group">
+          <label class="form-label" for="passName">Full Name</label>
+          <input type="text" class="form-control" id="passName" placeholder="e.g. Aarav Shrestha" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="passPhone">Phone Number</label>
+          <input type="tel" class="form-control" id="passPhone" placeholder="98XXXXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="passGoal">Primary Fitness Goal</label>
+          <select class="form-control" id="passGoal">
+            <option value="bodybuilding">Bodybuilding & Muscle Building</option>
+            <option value="strength">Heavy Strength Training</option>
+            <option value="fatloss">Weight Loss & Fat Burn</option>
+            <option value="fitness">General Fitness</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; margin-top: 1rem;">💬 Reserve Trial Session via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

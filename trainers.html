@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Trainers - Evolution Gym Kathmandu</title>
+  <meta name="description" content="Meet the friendly certified trainers at Evolution Gym in Kathmandu. Expert guidance in bodybuilding, strength training, and posture correction.">
+  <meta property="og:title" content="Our Trainers - Evolution Gym Kathmandu">
+  <meta property="og:description" content="Meet the friendly certified trainers at Evolution Gym in Kathmandu. Expert guidance in bodybuilding, strength training, and posture correction.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- SKIP TO MAIN CONTENT LINK FOR KEYBOARD ACCESSIBILITY -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- NAVBAR HEADER -->
+  <header class="header" id="mainHeader">
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="brandLogo" aria-label="Evolution Gym Kathmandu Home">
+        <div class="logo-badge">EVO</div>
+        <span>EVOLUTION<span class="text-red">GYM</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="trainers.html" class="nav-link active">Trainers</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="btn btn-primary btn-sm open-pass-modal" id="navPassBtn">Join Now</button>
+      </div>
+
+      <div class="hamburger" id="hamburgerToggle" aria-label="Toggle navigation" role="button" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="mainContent">
+
+  <!-- PAGE HERO HEADER -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3rem); padding-bottom: 3rem; background: var(--bg-surface);">
+    <div class="container text-center">
+      <div class="badge"><span class="badge-dot"></span> EXPERT GUIDANCE & SUPPORT</div>
+      <h1 class="section-title" style="font-size: 3.5rem;">MEET OUR TRAINERS</h1>
+      <p class="section-subtitle">Approachable, experienced fitness instructors dedicated to helping Kathmandu lifters train safely, build muscle, and stay consistent.</p>
+    </div>
+  </section>
+
+  <!-- TRAINERS SECTION -->
+  <section class="section" id="trainersSection">
+    <div class="container">
+
+      <div class="trainers-grid">
+
+        <!-- Trainer 1 -->
+        <div class="trainer-card">
+          <div class="trainer-img-wrapper">
+            <img src="assets/images/trainer_bikash.jpg" alt="Bikash Gurung Head Coach" loading="lazy" width="600" height="800" referrerpolicy="no-referrer">
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Bikash Gurung</h3>
+            <div class="trainer-role">Head Coach & Hypertrophy Specialist</div>
+            <p class="trainer-bio">Specializing in heavy barbell mechanics, hypertrophy split planning, and progressive overload tracking for Kathmandu lifters.</p>
+            <button class="btn btn-sm btn-outline-red open-pass-modal" style="width: 100%;">Book Consultation</button>
+          </div>
+        </div>
+
+        <!-- Trainer 2 -->
+        <div class="trainer-card">
+          <div class="trainer-img-wrapper">
+            <img src="assets/images/trainer_sunita.jpg" alt="Sunita Rai Fitness Coach" loading="lazy" width="600" height="800" referrerpolicy="no-referrer">
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Sunita Rai</h3>
+            <div class="trainer-role">Fat Loss & Conditioning Coach</div>
+            <p class="trainer-bio">Focused on postural correction, fat burn circuits, mobility, and guiding beginner members through their initial gym routines.</p>
+            <button class="btn btn-sm btn-outline-red open-pass-modal" style="width: 100%;">Book Consultation</button>
+          </div>
+        </div>
+
+        <!-- Trainer 3 -->
+        <div class="trainer-card">
+          <div class="trainer-img-wrapper">
+            <img src="assets/images/trainer_roshan.jpg" alt="Roshan Thapa Powerlifting Coach" loading="lazy" width="600" height="800" referrerpolicy="no-referrer">
+          </div>
+          <div class="trainer-info">
+            <h3 class="trainer-name">Roshan Thapa</h3>
+            <div class="trainer-role">Powerlifting & Compound Form Coach</div>
+            <p class="trainer-bio">Master of heavy compound lifts, squat mechanics, and safe progressive overload routines.</p>
+            <button class="btn btn-sm btn-outline-red open-pass-modal" style="width: 100%;">Book Consultation</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- EDITABLE NOTE BANNER -->
+      <div style="background: var(--bg-card); border-radius: var(--radius-md); border: 1px dashed var(--border-subtle); padding: 1.5rem; margin-top: 3.5rem; text-align: center;">
+        <p style="color: var(--text-secondary); font-size: 0.95rem;">
+          ℹ️ <strong>Note:</strong> Trainer details and bio profiles above are configurable to display your actual staff names and direct contact links.
+        </p>
+      </div>
+
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="mainFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1.25rem;">
+            <div class="logo-badge">EVO</div>
+            <span>EVOLUTION<span class="text-red">GYM</span></span>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.925rem; margin-bottom: 1.5rem;">
+            Evolution Gym is Kathmandu's premier bodybuilding and strength training center, offering top equipment, friendly trainers, and affordable memberships.
+          </p>
+          <div style="font-size: 0.9rem; color: var(--accent-gold); font-weight: 700;">
+            4.7 ★ Rated (346+ Google Reviews)
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Training Programs</a>
+            <a href="trainers.html">Our Trainers</a>
+            <a href="membership.html">Membership Plans</a>
+            <a href="gallery.html">Gym Gallery</a>
+            <a href="reviews.html">Google Reviews</a>
+            <a href="contact.html">Contact / Visit</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Operating Hours</h4>
+          <div style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8;">
+            <p><strong>Monday - Saturday:</strong> 5:30 AM - 10:00 PM</p>
+            <p><strong>Sunday:</strong> 6:00 AM - 9:00 PM</p>
+            <p style="color: var(--accent-red); font-weight: 700; margin-top: 0.5rem;">● Open until 10 PM daily</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <div style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8;">
+            <p>📍 Kathmandu, Bagmati Province 44600, Nepal</p>
+            <p>📞 Phone: <strong>981-5813774</strong></p>
+            <p>💬 WhatsApp: <a href="https://wa.me/9779815813774" target="_blank" rel="noopener noreferrer" style="color: #25d366; font-weight: 700;">+977 9815813774</a></p>
+            <p>✉️ info@evolutiongymnepal.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Evolution Gym Kathmandu. All rights reserved.</p>
+        <p>Premium Athletic Experience in Nepal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TRIAL PASS MODAL -->
+  <div class="modal-overlay" id="passModal">
+    <div class="modal-content">
+      <span class="modal-close" id="closePassModalBtn">&times;</span>
+      <div class="badge"><span class="badge-dot"></span> NO OBLIGATION</div>
+      <h3 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 900; margin-bottom: 0.5rem; text-transform: uppercase;">CLAIM YOUR FREE GYM PASS</h3>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">Experience Evolution Gym's equipment and friendly guidance free for 1 day.</p>
+      
+      <form id="modalPassForm">
+        <div class="form-group">
+          <label class="form-label" for="passName">Full Name</label>
+          <input type="text" class="form-control" id="passName" placeholder="e.g. Aarav Shrestha" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="passPhone">Phone Number</label>
+          <input type="tel" class="form-control" id="passPhone" placeholder="98XXXXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="passGoal">Primary Fitness Goal</label>
+          <select class="form-control" id="passGoal">
+            <option value="bodybuilding">Bodybuilding & Muscle Building</option>
+            <option value="strength">Heavy Strength Training</option>
+            <option value="fatloss">Weight Loss & Fat Burn</option>
+            <option value="fitness">General Fitness</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; margin-top: 1rem;">💬 Reserve Trial Session via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

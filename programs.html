@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Programs - Evolution Gym Kathmandu | Hypertrophy, Strength & Fat Loss</title>
+  <meta name="description" content="Explore Evolution Gym's 8 training programs in Kathmandu: Strength Training, Bodybuilding, Muscle Building, Weight Loss, Personal Training, General Fitness, Functional Training, and Beginner Fitness.">
+  <meta property="og:title" content="Training Programs - Evolution Gym Kathmandu">
+  <meta property="og:description" content="Explore Evolution Gym's 8 training programs in Kathmandu: Strength Training, Bodybuilding, Muscle Building, Weight Loss, Personal Training, General Fitness, Functional Training, and Beginner Fitness.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <!-- SKIP TO MAIN CONTENT LINK FOR KEYBOARD ACCESSIBILITY -->
+  <a href="#mainContent" class="skip-link">Skip to main content</a>
+
+  <!-- NAVBAR HEADER -->
+  <header class="header" id="mainHeader">
+    <div class="container navbar">
+      <a href="index.html" class="logo" id="brandLogo" aria-label="Evolution Gym Kathmandu Home">
+        <div class="logo-badge">EVO</div>
+        <span>EVOLUTION<span class="text-red">GYM</span></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Primary Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link active">Programs</a>
+        <a href="trainers.html" class="nav-link">Trainers</a>
+        <a href="membership.html" class="nav-link">Membership</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <button class="btn btn-primary btn-sm open-pass-modal" id="navPassBtn">Join Now</button>
+      </div>
+
+      <div class="hamburger" id="hamburgerToggle" aria-label="Toggle navigation" role="button" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT CONTAINER -->
+  <main id="mainContent">
+
+  <!-- PAGE HERO HEADER -->
+  <section class="section" style="padding-top: calc(var(--header-height) + 3.5rem); padding-bottom: 3.5rem; background: var(--bg-surface);">
+    <div class="container text-center">
+      <div class="badge"><span class="badge-dot"></span> RESULT-DRIVEN PROGRAMMING</div>
+      <h1 class="section-title" style="font-size: 3.5rem;">OUR TRAINING PROGRAMS</h1>
+      <p class="section-subtitle">Targeted routines engineered for hypertrophy, compound strength, metabolic fat loss, and beginner confidence with friendly Kathmandu floor coaches.</p>
+    </div>
+  </section>
+
+  <!-- PROGRAM FILTERS & GRID -->
+  <section class="section" id="programsGridSection">
+    <div class="container">
+
+      <!-- Category Filter Tabs -->
+      <div class="filter-bar">
+        <button class="filter-btn program-filter-btn active" data-filter="all">All Programs (8)</button>
+        <button class="filter-btn program-filter-btn" data-filter="strength">Strength & Power</button>
+        <button class="filter-btn program-filter-btn" data-filter="bodybuilding">Bodybuilding & Hypertrophy</button>
+        <button class="filter-btn program-filter-btn" data-filter="fatloss">Weight Loss & Shred</button>
+        <button class="filter-btn program-filter-btn" data-filter="coaching">Personal Training</button>
+        <button class="filter-btn program-filter-btn" data-filter="fitness">General & Functional</button>
+        <button class="filter-btn program-filter-btn" data-filter="beginner">Beginner Friendly</button>
+      </div>
+
+      <!-- Programs Grid -->
+      <div class="programs-grid">
+
+        <!-- Program 1: Strength Training -->
+        <div class="program-card" data-category="strength">
+          <div class="program-img-wrapper">
+            <img src="assets/images/program_strength.jpg" alt="Strength Training at Evolution Gym Kathmandu">
+            <span class="program-tag">Barbell Power</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-title">Strength Training</h3>
+            <p class="program-desc">Focus on core compound movements — squat, bench press, deadlift, and overhead press. Increase neural drive, bone density, and raw power with heavy barbell splits.</p>
+            
+            <div class="program-benefits">
+              <div class="program-benefits-title">Key Program Benefits</div>
+              <ul class="program-benefits-list">
+                <li>Progressive overload on major compound lifts</li>
+                <li>Enhanced neural drive & skeletal muscle density</li>
+                <li>Floor guidance on squat depth & bench arch safety</li>
+              </ul>
+            </div>
+
+            <div class="program-audience">
+              <strong>Best For:</strong> Lifters seeking raw strength, powerlifting foundations, and squat/deadlift PRs.
+            </div>
+
+            <div class="program-footer">
+              <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">Power Rack Zone</span>
+              <button class="btn btn-sm btn-primary open-pass-modal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2: Bodybuilding -->
+        <div class="program-card" data-category="bodybuilding">
+          <div class="program-img-wrapper">
+            <img src="assets/images/bodybuilding.jpg" alt="Bodybuilding Hypertrophy Split">
+            <span class="program-tag">Hypertrophy</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-title">Bodybuilding Split</h3>
+            <p class="program-desc">High-volume muscle hypertrophy routines using dumbbells, plate-loaded leg presses, hack squats, and cable crossover stacks for aesthetic physique sculpting.</p>
+            
+            <div class="program-benefits">
+              <div class="program-benefits-title">Key Program Benefits</div>
+              <ul class="program-benefits-list">
+                <li>Targeted muscle group hypertrophy split</li>
+                <li>High-volume cable & plate-loaded machine isolation</li>
+                <li>Time-under-tension & pump guidance on floor</li>
+              </ul>
+            </div>
+
+            <div class="program-audience">
+              <strong>Best For:</strong> Bodybuilders, hypertrophy enthusiasts, and muscle sculpting.
+            </div>
+
+            <div class="program-footer">
+              <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">Heavy Iron Floor</span>
+              <button class="btn btn-sm btn-primary open-pass-modal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3: Muscle Building -->
+        <div class="program-card" data-category="bodybuilding">
+          <div class="program-img-wrapper">
+            <img src="assets/images/about_gym.jpg" alt="Muscle Building Mass Accelerator">
+            <span class="program-tag">Mass Building</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-title">Muscle Mass Accelerator</h3>
+            <p class="program-desc">Engineered for hardgainers and intermediate lifters aiming to put on clean muscle mass through heavy dumbbell pressing, heavy rows, and progressive overload tracking.</p>
+            
+            <div class="program-benefits">
+              <div class="program-benefits-title">Key Program Benefits</div>
+              <ul class="program-benefits-list">
+                <li>Customized weight progression for hardgainers</li>
+                <li>Heavy dumbbell pressing & barbell row splits</li>
+                <li>Caloric surplus planning & spotter assistance</li>
+              </ul>
+            </div>
+
+            <div class="program-audience">
+              <strong>Best For:</strong> Hardgainers, intermediate lifters, and lean mass building.
+            </div>
+
+            <div class="program-footer">
+              <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">Hypertrophy Gear</span>
+              <button class="btn btn-sm btn-primary open-pass-modal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 4: Weight Loss -->
+        <div class="program-card" data-category="fatloss">
+          <div class="program-img-wrapper">
+            <img src="assets/images/program_hiit.jpg" alt="Weight Loss and Fat Burn Shred">
+            <span class="program-tag">Metabolic Shred</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-title">Weight Loss & Shred</h3>
+            <p class="program-desc">Combine metabolic resistance conditioning, kettlebell circuits, and steady-state treadmill cardio to burn maximum calories while preserving lean muscle tone.</p>
+            
+            <div class="program-benefits">
+              <div class="program-benefits-title">Key Program Benefits</div>
+              <ul class="program-benefits-list">
+                <li>High caloric burn & metabolic conditioning</li>
+                <li>Preservation of lean muscle mass during deficit</li>
+                <li>Cardio treadmill & stationary bike access</li>
+              </ul>
+            </div>
+
+            <div class="program-audience">
+              <strong>Best For:</strong> Members aiming to lose fat, tone physique, and boost stamina.
+            </div>
+
+            <div class="program-footer">
+              <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">Cardio & Circuit</span>
+              <button class="btn btn-sm btn-primary open-pass-modal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 5: Personal Training -->
+        <div class="program-card" data-category="coaching">
+          <div class="program-img-wrapper">
+            <img src="assets/images/trainer_bikash.jpg" alt="1-on-1 Personal Training Coach" loading="lazy">
+            <span class="program-tag">1-on-1 Coaching</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-title">Personal Training</h3>
+            <p class="program-desc">Dedicated 1-on-1 coaching sessions with our friendly certified instructors in Kathmandu. Tailored workout plans, strict posture correction, and steady accountability.</p>
+            
+            <div class="program-benefits">
+              <div class="program-benefits-title">Key Program Benefits</div>
+              <ul class="program-benefits-list">
+                <li>Dedicated individual coach by your side</li>
+                <li>Personalized workout plans & form correction</li>
+                <li>Goal tracking & progressive split adjustment</li>
+              </ul>
+            </div>
+
+            <div class="program-audience">
+              <strong>Best For:</strong> Lifters wanting dedicated accountability, technique refinement, and fast results.
+            </div>
+
+            <div class="program-footer">
+              <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">Dedicated Coach</span>
+              <button class="btn btn-sm btn-primary open-pass-modal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 6: General Fitness -->
+        <div class="program-card" data-category="fitness">
+          <div class="program-img-wrapper">
+            <img src="assets/images/equipment.jpg" alt="General Fitness and Daily Health">
+            <span class="program-tag">Daily Health</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-title">General Fitness & Mobility</h3>
+            <p class="program-desc">Balanced conditioning routines for overall cardiovascular stamina, joint mobility, core stability, and consistent daily energy for working professionals.</p>
+            
+            <div class="program-benefits">
+              <div class="program-benefits-title">Key Program Benefits</div>
+              <ul class="program-benefits-list">
+                <li>Balanced strength & aerobic stamina conditioning</li>
+                <li>Core stability & posture refinement</li>
+                <li>Sustainable 3 to 4 day weekly gym routine</li>
+              </ul>
+            </div>
+
+            <div class="program-audience">
+              <strong>Best For:</strong> Working professionals, active adults, and health-focused members.
+            </div>
+
+            <div class="program-footer">
+              <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">All Gym Access</span>
+              <button class="btn btn-sm btn-primary open-pass-modal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 7: Functional Training -->
+        <div class="program-card" data-category="fitness">
+          <div class="program-img-wrapper">
+            <img src="assets/images/community.jpg" alt="Functional Training and Athletic Conditioning">
+            <span class="program-tag">Athletic Movement</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-title">Functional Training</h3>
+            <p class="program-desc">Multi-planar athletic movements, kettlebell work, core stabilization, and bodyweight exercises designed for real-world strength and joint agility.</p>
+            
+            <div class="program-benefits">
+              <div class="program-benefits-title">Key Program Benefits</div>
+              <ul class="program-benefits-list">
+                <li>Multi-directional athletic movement patterns</li>
+                <li>Improved core resilience & joint mobility</li>
+                <li>Dynamic kettlebell & bodyweight circuits</li>
+              </ul>
+            </div>
+
+            <div class="program-audience">
+              <strong>Best For:</strong> Athletes, functional fitness enthusiasts, and injury-prevention training.
+            </div>
+
+            <div class="program-footer">
+              <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">Functional Area</span>
+              <button class="btn btn-sm btn-primary open-pass-modal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 8: Beginner Fitness -->
+        <div class="program-card" data-category="beginner">
+          <div class="program-img-wrapper">
+            <img src="assets/images/trainer_sunita.jpg" alt="Beginner Fitness Foundation Onboarding" loading="lazy">
+            <span class="program-tag">First-Timer Friendly</span>
+          </div>
+          <div class="program-content">
+            <h3 class="program-title">Beginner Fitness Foundation</h3>
+            <p class="program-desc">A welcoming, step-by-step introduction to gym equipment, basic barbell mechanics, and dumbbell safety under friendly floor coach supervision.</p>
+            
+            <div class="program-benefits">
+              <div class="program-benefits-title">Key Program Benefits</div>
+              <ul class="program-benefits-list">
+                <li>Zero-intimidation floor onboarding</li>
+                <li>Safe equipment walkthrough & seat adjustment</li>
+                <li>Simple 3-day full-body workout habit building</li>
+              </ul>
+            </div>
+
+            <div class="program-audience">
+              <strong>Best For:</strong> First-time gym members, beginners, and returning lifters.
+            </div>
+
+            <div class="program-footer">
+              <span style="color: var(--accent-red); font-weight: 700; font-size: 0.85rem;">Floor Guidance</span>
+              <button class="btn btn-sm btn-primary open-pass-modal">Enquire Now</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PREMIUM CTA SECTION -->
+  <section class="section section-darker text-center" id="programsCTA">
+    <div class="container">
+      <div class="badge"><span class="badge-dot"></span> UNSURE WHICH PROGRAM IS RIGHT FOR YOU?</div>
+      <h2 class="section-title" style="font-size: 3rem;">TALK TO OUR FLOOR COACHES IN KATHMANDU</h2>
+      <p class="section-subtitle" style="margin-bottom: 2.25rem;">Our friendly trainers are on the floor daily to recommend the ideal program split for your goals, schedule, and experience level.</p>
+      
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="membership.html" class="btn btn-primary btn-lg">Join Now</a>
+        <button class="btn btn-whatsapp btn-lg wa-hero-btn">💬 Enquire on WhatsApp</button>
+        <button class="btn btn-whatsapp btn-lg wa-trial-btn">💬 Book a Trial Session</button>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="mainFooter">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <a href="index.html" class="logo" style="margin-bottom: 1.25rem;">
+            <div class="logo-badge">EVO</div>
+            <span>EVOLUTION<span class="text-red">GYM</span></span>
+          </a>
+          <p style="color: var(--text-secondary); font-size: 0.925rem; margin-bottom: 1.5rem;">
+            Evolution Gym is Kathmandu's premier bodybuilding and strength training center, offering top equipment, friendly trainers, and affordable memberships.
+          </p>
+          <div style="font-size: 0.9rem; color: var(--accent-gold); font-weight: 700;">
+            4.7 ★ Rated (346+ Google Reviews)
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="programs.html">Training Programs</a>
+            <a href="trainers.html">Our Trainers</a>
+            <a href="membership.html">Membership Plans</a>
+            <a href="gallery.html">Gym Gallery</a>
+            <a href="reviews.html">Google Reviews</a>
+            <a href="contact.html">Contact / Visit</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Operating Hours</h4>
+          <div style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8;">
+            <p><strong>Monday - Saturday:</strong> 5:30 AM - 10:00 PM</p>
+            <p><strong>Sunday:</strong> 6:00 AM - 9:00 PM</p>
+            <p style="color: var(--accent-red); font-weight: 700; margin-top: 0.5rem;">● Open until 10 PM daily</p>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <div style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.8;">
+            <p>📍 Kathmandu, Bagmati Province 44600, Nepal</p>
+            <p>📞 Phone: <strong>981-5813774</strong></p>
+            <p>💬 WhatsApp: <a href="https://wa.me/9779815813774" target="_blank" rel="noopener noreferrer" style="color: #25d366; font-weight: 700;">+977 9815813774</a></p>
+            <p>✉️ info@evolutiongymnepal.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Evolution Gym Kathmandu. All rights reserved.</p>
+        <p>Premium Athletic Experience in Nepal</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- TRIAL PASS MODAL -->
+  <div class="modal-overlay" id="passModal">
+    <div class="modal-content">
+      <span class="modal-close" id="closePassModalBtn">&times;</span>
+      <div class="badge"><span class="badge-dot"></span> NO OBLIGATION</div>
+      <h3 style="font-family: var(--font-display); font-size: 1.8rem; font-weight: 900; margin-bottom: 0.5rem; text-transform: uppercase;">CLAIM YOUR FREE GYM PASS</h3>
+      <p style="color: var(--text-secondary); font-size: 0.95rem; margin-bottom: 1.5rem;">Experience Evolution Gym's equipment and friendly guidance free for 1 day.</p>
+      
+      <form id="modalPassForm">
+        <div class="form-group">
+          <label class="form-label" for="passName">Full Name</label>
+          <input type="text" class="form-control" id="passName" placeholder="e.g. Aarav Shrestha" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="passPhone">Phone Number</label>
+          <input type="tel" class="form-control" id="passPhone" placeholder="98XXXXXXXX" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="passGoal">Primary Fitness Goal</label>
+          <select class="form-control" id="passGoal">
+            <option value="bodybuilding">Bodybuilding & Muscle Building</option>
+            <option value="strength">Heavy Strength Training</option>
+            <option value="fatloss">Weight Loss & Fat Burn</option>
+            <option value="fitness">General Fitness</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-whatsapp btn-lg" style="width: 100%; margin-top: 1rem;">💬 Reserve Trial Session via WhatsApp</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
+
