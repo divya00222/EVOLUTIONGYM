@@ -89,6 +89,11 @@ function initScrollReveal() {
   
   revealElements.forEach(el => {
     el.classList.add('reveal-on-scroll');
+    // Reveal immediately if already within or near initial viewport
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight + 80) {
+      el.classList.add('revealed');
+    }
   });
 
   if ('IntersectionObserver' in window) {
@@ -100,11 +105,15 @@ function initScrollReveal() {
         }
       });
     }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
+      threshold: 0.02,
+      rootMargin: '100px 0px 50px 0px'
     });
 
-    revealElements.forEach(el => observer.observe(el));
+    revealElements.forEach(el => {
+      if (!el.classList.contains('revealed')) {
+        observer.observe(el);
+      }
+    });
   } else {
     revealElements.forEach(el => el.classList.add('revealed'));
   }

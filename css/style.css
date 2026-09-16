@@ -1121,12 +1121,14 @@ input:checked + .slider:before {
 .gallery-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(6, 8, 12, 0.8);
+  background: rgba(6, 8, 12, 0.85);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   padding: 1.5rem;
   text-align: center;
   transition: var(--transition-smooth);
@@ -1138,6 +1140,8 @@ input:checked + .slider:before {
 
 .gallery-item:hover .gallery-overlay {
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .gallery-tag-badge {
@@ -1583,17 +1587,20 @@ input:checked + .slider:before {
   height: 100%;
   background: rgba(0, 0, 0, 0.88);
   z-index: 2000;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
-  transition: var(--transition-fast);
+  transition: opacity var(--transition-fast), visibility var(--transition-fast);
   padding: 1.5rem;
 }
 
 .modal-overlay.active {
+  display: flex;
   opacity: 1;
+  visibility: visible;
   pointer-events: auto;
 }
 
@@ -1795,13 +1802,17 @@ a, button, input, select, textarea, .nav-link, .program-filter-btn, .trainer-fil
     padding: 2rem 1.5rem 3rem 1.5rem;
     gap: 0.5rem;
     transform: translateY(-150%);
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.35s ease;
     border-bottom: 1px solid var(--border-red);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.9);
   }
 
   .nav-menu.open {
     transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .nav-link {
