@@ -74,9 +74,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  image-rendering: -webkit-optimize-contrast;
   image-rendering: auto;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
 }
 
 a {
@@ -247,19 +246,14 @@ ul {
   height: var(--header-height);
   z-index: 1000;
   transition: var(--transition-smooth);
-  background: rgba(6, 8, 12, 0.92);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  background: rgba(6, 8, 12, 0.96);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  transform: translateZ(0);
 }
 
 .header.scrolled {
-  background: rgba(6, 8, 12, 0.98);
+  background: #06080c;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
   border-bottom-color: var(--border-subtle);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
 .navbar {
@@ -450,30 +444,25 @@ ul {
   height: 500px;
   object-fit: cover;
   transition: var(--transition-smooth);
-  will-change: transform;
-  transform: translateZ(0);
 }
 
 .hero-image-wrapper:hover img {
-  transform: scale(1.03) translateZ(0);
+  transform: scale(1.03);
 }
 
 .hero-float-card {
   position: absolute;
   bottom: -25px;
   left: -20px;
-  background: rgba(16, 22, 32, 0.96);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background: var(--bg-surface-elevated);
   border: 1px solid var(--border-red);
   border-radius: var(--radius-md);
   padding: 1.25rem 1.5rem;
   display: flex;
   align-items: center;
   gap: 1rem;
-  box-shadow: var(--shadow-subtle);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.85);
   z-index: 3;
-  transform: translateZ(0);
 }
 
 .float-icon {
@@ -650,12 +639,10 @@ ul {
   height: 100%;
   object-fit: cover;
   transition: var(--transition-smooth);
-  will-change: transform;
-  transform: translateZ(0);
 }
 
 .program-card:hover .program-img-wrapper img {
-  transform: scale(1.08) translateZ(0);
+  transform: scale(1.06);
 }
 
 .program-tag {
@@ -785,12 +772,10 @@ ul {
   height: 100%;
   object-fit: cover;
   transition: var(--transition-smooth);
-  will-change: transform;
-  transform: translateZ(0);
 }
 
 .trainer-card:hover .trainer-img-wrapper img {
-  transform: scale(1.05) translateZ(0);
+  transform: scale(1.04);
 }
 
 .trainer-info {
@@ -1131,8 +1116,6 @@ input:checked + .slider:before {
   object-fit: cover;
   display: block;
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-  will-change: transform;
-  transform: translateZ(0);
 }
 
 .gallery-overlay {
@@ -1598,9 +1581,7 @@ input:checked + .slider:before {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.85);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.88);
   z-index: 2000;
   display: flex;
   align-items: center;
@@ -1624,15 +1605,13 @@ input:checked + .slider:before {
   max-width: 550px;
   padding: 2.5rem;
   position: relative;
-  transform: translate3d(0, 10px, 0);
+  transform: translateY(10px);
   transition: var(--transition-smooth);
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.9);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .modal-overlay.active .modal-content {
-  transform: translate3d(0, 0, 0);
+  transform: translateY(0);
 }
 
 .modal-close {
@@ -1739,19 +1718,12 @@ input:checked + .slider:before {
 }
 
 /* Global Strict Anti-Overflow & Touch Target Rules */
-html, body {
+body {
   width: 100%;
-  max-width: 100vw;
-  overflow-x: hidden !important;
-  position: relative;
+  overflow-x: hidden;
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  max-width: 100%;
-}
-
-img, video, iframe, embed, object {
+img, video, iframe, embed, object, canvas, table {
   max-width: 100%;
   height: auto;
 }
@@ -1818,9 +1790,7 @@ a, button, input, select, textarea, .nav-link, .program-filter-btn, .trainer-fil
     width: 100%;
     max-height: calc(100vh - var(--header-height));
     overflow-y: auto;
-    background: rgba(8, 11, 16, 0.98);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    background: #080b10;
     flex-direction: column;
     padding: 2rem 1.5rem 3rem 1.5rem;
     gap: 0.5rem;
@@ -2071,16 +2041,17 @@ a, button, input, select, textarea, .nav-link, .program-filter-btn, .trainer-fil
 /* 18. SCROLL REVEAL ANIMATIONS */
 .reveal-on-scroll {
   opacity: 0;
-  transform: translate3d(0, 20px, 0);
+  transform: translateY(20px);
   transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
   will-change: opacity, transform;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
 }
 
 .reveal-on-scroll.revealed {
   opacity: 1;
   transform: none;
+  will-change: auto;
+  backface-visibility: visible;
+  -webkit-backface-visibility: visible;
 }
 
 /* 19. ABOUT PAGE ENHANCEMENTS */

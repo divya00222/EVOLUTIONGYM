@@ -130,7 +130,10 @@ function initProgramFilters() {
           const categories = cardCategory.split(' ');
           if (category === 'all' || categories.includes(category) || cardCategory === category) {
             card.style.display = 'flex';
-            setTimeout(() => { card.style.opacity = '1'; card.style.transform = 'translateY(0)'; }, 50);
+            setTimeout(() => { 
+              card.style.opacity = '1'; 
+              card.style.transform = ''; 
+            }, 50);
           } else {
             card.style.opacity = '0';
             card.style.transform = 'translateY(10px)';
@@ -246,7 +249,7 @@ function initGalleryLightbox() {
             item.style.display = 'block';
             setTimeout(() => {
               item.style.opacity = '1';
-              item.style.transform = 'scale(1)';
+              item.style.transform = '';
             }, 50);
           } else {
             item.style.opacity = '0';
